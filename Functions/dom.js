@@ -12,3 +12,12 @@ export function creations(tagName,attributes={}){
             }
         }           return element
 }
+
+/**
+ * 
+ * @param {String} id 
+ * @returns {DocumentFragment}
+ */
+export function templateClone(id){
+    return document.getElementById(id).content.cloneNode(true)
+}
